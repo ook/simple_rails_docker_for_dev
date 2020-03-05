@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Very simple project bootstrap of a Rails project with a simple Dockerfile and docker-compose.yaml, all "just working". Development compliant (mount your project into the docker image, so you can develop w/o having to rebuild your docker image between each change).
 
-Things you may want to cover:
+## Stack
 
-* Ruby version
+* ruby 2.7.0
+* rails 6.0.2 (*without webpack and javascript!*)
+* docker-compose v3.7
 
-* System dependencies
+## Test it
 
-* Configuration
+`docker-compose up --build app`
 
-* Database creation
+You can connect to `http://localhost:3000`
 
-* Database initialization
+## Usage
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Copy this repository, start your project
